@@ -9,6 +9,10 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
 </head>
+<script>
+  var crypto = require('crypto');
+  crypto.createHmac('sha256', 'af3d1c78497e0be0ec9bf1efa350c239').update(payload).digest('hex');
+</script>
 <body>
   <app-root></app-root>
 </body>
